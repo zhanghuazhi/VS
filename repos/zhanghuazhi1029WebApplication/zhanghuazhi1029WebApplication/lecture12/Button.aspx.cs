@@ -22,6 +22,7 @@ namespace zhanghuazhi1029WebApplication.lecture12
         protected void ButtonEx_Command(object sender, CommandEventArgs e)
         {
             LabelMessage.Text = e.CommandName;
+            
         }
 
         protected void ButtonClick(object sender, EventArgs e)
