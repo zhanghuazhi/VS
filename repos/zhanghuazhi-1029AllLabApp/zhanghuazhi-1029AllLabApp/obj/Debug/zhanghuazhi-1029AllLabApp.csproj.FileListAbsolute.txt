@@ -1,0 +1,8 @@
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\bin\Debug\zhanghuazhi-1029AllLabApp.exe.config
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\bin\Debug\zhanghuazhi-1029AllLabApp.exe
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\bin\Debug\zhanghuazhi-1029AllLabApp.pdb
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\obj\Debug\zhanghuazhi-1029AllLabApp.csproj.AssemblyReference.cache
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\obj\Debug\zhanghuazhi-1029AllLabApp.csproj.SuggestedBindingRedirects.cache
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\obj\Debug\zhanghuazhi-1029AllLabApp.csproj.CoreCompileInputs.cache
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\obj\Debug\zhanghuazhi-1029AllLabApp.exe
+D:\VS\repos\zhanghuazhi-1029AllLabApp\zhanghuazhi-1029AllLabApp\obj\Debug\zhanghuazhi-1029AllLabApp.pdb
