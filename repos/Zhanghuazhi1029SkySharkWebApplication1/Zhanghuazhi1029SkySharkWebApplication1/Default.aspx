@@ -20,7 +20,7 @@
                     <td>
                         <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>               
                     </td>
-                    <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                    <td><asp:TextBox ID="txtUsername" runat="server"></asp:TextBox></td>
                      <td>
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUserName" ErrorMessage="Please specify a valid user name."></asp:RequiredFieldValidator>
                     </td>
@@ -29,7 +29,7 @@
                    
                     <td><asp:Label ID="Label2" runat="server" Text="Password"></asp:Label></td>
                     <td>
-                        <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
                      </td>
                       <td>
                           <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="Please specify a valid password."></asp:RequiredFieldValidator>
@@ -38,7 +38,7 @@
                  <tr>
                     <td></td>
                     <td>
-                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                      </td>
                       <td></td>
                 </tr>

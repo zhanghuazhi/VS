@@ -40,7 +40,7 @@
                         <asp:Label ID="Label3" runat="server" Text="Generate a flight userger report for all flights flown by the airline."></asp:Label>
                       </td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" Text="Generate" BackColor="Silver" BorderColor="Blue" />
+                        <asp:Button ID="Button1" runat="server" Text="Generate Flight Usage Report" BackColor="Silver" BorderColor="Blue" OnClick="Button1_Click" />
                       </td>
                 </tr>
                 <tr>
@@ -48,7 +48,7 @@
                         <asp:Label ID="Label5" runat="server" Text="Generate a customer affinity report for top 100 customers"></asp:Label>
                     </td>
                     <td>
-                        <asp:Button ID="Button2" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate" />
+                        <asp:Button ID="Button2" runat="server" BackColor="Silver" BorderColor="Blue" Text=" Generate customer Affinity Report" OnClick="Button2_Click" />
                     </td>
                     <td></td>
                 </tr>
@@ -74,13 +74,14 @@
                             <asp:ListItem>2003</asp:ListItem>
                             <asp:ListItem>2004</asp:ListItem>
                             <asp:ListItem>2005</asp:ListItem>
+                            <asp:ListItem>2022</asp:ListItem>
                         </asp:ListBox>
                       </td>
-                    <td><asp:Button ID="Button3" runat="server" Text="Generate" BackColor="Silver" BorderColor="Blue" /></td>
+                    <td><asp:Button ID="Button3" runat="server" Text="Generate Total Revenue Report" BackColor="Silver" BorderColor="Blue" OnClick="Button3_Click" /></td>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:GridView ID="GridView1" runat="server">
+                        <asp:GridView ID="DataGrid1" runat="server">
                         </asp:GridView>
                     </td>
                 </tr>

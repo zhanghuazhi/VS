@@ -22,50 +22,84 @@
         <div class="tabContents">
             <table>
                 <tr>
-                    <td><asp:Label ID="Label1" runat="server" Text="Frequent Flier"></asp:Label></td>
-                </tr>
-                  <tr>
+                    <td colspan="2">
+                        <asp:Label ID="Label1" runat="server" Text="Frequent Flier"></asp:Label>
+                    </td>
                     <td></td>
-                    <td><asp:HyperLink ID="HyperLink1" runat="server" BorderColor="Red" NavigateUrl="~/ChangePassword.aspx">Change Password</asp:HyperLink></td>
-                      
-                    <td><asp:HyperLink ID="HyperLink2" runat="server" BorderColor="Red" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>tsxt1<asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList></td>
-                    <td>Text2<asp:DropDownList ID="DropDownList2" runat="server">
-                        </asp:DropDownList>
-                        text3</td>
+                   <td></td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" Text="Button" />
-                    </td>
-                </tr>
-                   <tr>
-                    <td>tsxt1<asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList></td>
-                    <td>Text2<asp:TextBox ID="TextBox1" runat="server" Width="80px"></asp:TextBox>
-                        text3</td>
-                    <td>
-                        <asp:Button ID="Button2" runat="server" Text="Button" />
-                    </td>
-                </tr>
-                 <tr>
-                    <td></td>
-                    <td>
-                        <asp:Button ID="Button3" runat="server" Text="Button" Width="203px" />
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ChangePassword.aspx">Change password</asp:HyperLink>
                      </td>
-                    <td></td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink>
+                     </td>
                 </tr>
-                 <tr>
-                    <td colspan="3"> 
-                        <asp:GridView ID="GridView1" runat="server" Width="457px">
+                <tr>
+                    <td><asp:Label ID="lblMessage" runat="server" Font-Bold="True" ForeColor="Red">lblMessage</asp:Label></td>
+                </tr>
+                <tr>
+                    <td>Total number for times Follown
+                    </td><td><asp:ListBox ID="listTimesFlown" runat="server">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                        </asp:ListBox></td>
+                    <td>Applicable discount percentage</td>
+                    <td>
+                        <asp:ListBox ID="lstDisc1" runat="server">
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>10</asp:ListItem>
+                            <asp:ListItem>15</asp:ListItem>
+                            <asp:ListItem>20</asp:ListItem>
+                            <asp:ListItem>25</asp:ListItem>
+                        </asp:ListBox>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Add" OnClick="Button1_Click" />
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>Customers who have paid more than a specified fare</td><td>
+                    <asp:TextBox ID="txtfare" runat="server"></asp:TextBox>
+                    </td>
+                    <td>Applicable discount percentage</td>
+                    <td>
+                        <asp:ListBox ID="lstDisc2" runat="server">
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>10</asp:ListItem>
+                            <asp:ListItem>15</asp:ListItem>
+                            <asp:ListItem>20</asp:ListItem>
+                            <asp:ListItem>25</asp:ListItem>
+                        </asp:ListBox>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="Add" OnClick="Button2_Click" />
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td colspan="3">
+                        <asp:GridView ID="DataGrid1" runat="server" Width="451px">
                         </asp:GridView>
-                     </td>
+                    </td>
                 </tr>
-                 <tr>
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
-                </table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
             </div>
         </form>
 </asp:Content>

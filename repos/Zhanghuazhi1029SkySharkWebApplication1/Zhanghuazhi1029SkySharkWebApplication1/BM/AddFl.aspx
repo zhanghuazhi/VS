@@ -14,6 +14,14 @@
             width: 436px;
         }
     </style>
+    <style type="text/css">
+        .auto-style1 {
+            width: 284px;
+        }
+        .auto-style2 {
+            width: 503px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -60,7 +68,7 @@
                 </tr>
                   <tr>
                     <td><asp:Label ID="Label3" runat="server" Text="Departure Time"></asp:Label></td>
-                    <td class="auto-style2"><asp:Calendar ID="Calendar1" runat="server"></asp:Calendar><asp:TextBox ID="txtDepartureTime" runat="server" OnTextChanged="txtDepartureTime_TextChanged"></asp:TextBox>(HH:MM)</td>
+                    <td class="auto-style2"><asp:Calendar ID="calDepartureTime" runat="server"></asp:Calendar><asp:TextBox ID="txtDepartureTime" runat="server" OnTextChanged="txtDepartureTime_TextChanged"></asp:TextBox>(HH:MM)</td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtDepartureTime" ErrorMessage="DepartureTimeRequired"></asp:RequiredFieldValidator>
                       </td>
@@ -75,7 +83,7 @@
                 </tr>
                   <tr>
                     <td><asp:Label ID="Label5" runat="server" Text="Arrival Time"></asp:Label></td>
-                    <td class="auto-style2"><asp:Calendar ID="Calendar2" runat="server"></asp:Calendar><asp:TextBox ID="txtArrivalTime" runat="server"></asp:TextBox>(HH:MM)</td>
+                    <td class="auto-style2"><asp:Calendar ID="calArrivalTime" runat="server"></asp:Calendar><asp:TextBox ID="txtArrivalTime" runat="server"></asp:TextBox>(HH:MM)</td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtArrivalTime" ErrorMessage="Arrival TimeRequired"></asp:RequiredFieldValidator>
                       </td>
@@ -102,8 +110,8 @@
                       </td>
                 </tr>
                   <tr>
-                    <td><asp:Label ID="Label9" runat="server" Text="Executie Class Faires"></asp:Label></td>
-                    <td class="auto-style2"><asp:TextBox ID="txtExecutieClassFaires" runat="server"></asp:TextBox></td>
+                    <td><asp:Label ID="Label9" runat="server" Text="Executie Class Fares"></asp:Label></td>
+                    <td class="auto-style2"><asp:TextBox ID="txtExecutieClassFares" runat="server"></asp:TextBox></td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtExecutieClassFaires" ErrorMessage="Executie Class FairesRequired"></asp:RequiredFieldValidator>
                       </td>
@@ -124,7 +132,7 @@
                 </tr>
                  <tr>
                     <td></td>
-                    <td class="auto-style2"><asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />  &nbsp; &nbsp;  <asp:Button ID="Button2" runat="server" Text="Cancle" /></td>
+                    <td class="auto-style2"><asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="Button1_Click" />  &nbsp; &nbsp;  <asp:Button ID="Button2" runat="server" Text="Cancle" /></td>
                     <td></td>
                 </tr>
             </table>
