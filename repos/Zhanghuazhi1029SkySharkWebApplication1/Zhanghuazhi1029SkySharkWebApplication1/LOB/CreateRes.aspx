@@ -38,6 +38,11 @@
             width: 184px;
         }
     </style>
+    <style type="text/css">
+        .auto-style1 {
+            width: 59px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server" >
@@ -71,7 +76,7 @@
                   </tr>
                  <tr>
                     <td>
-                        <asp:Wizard ID="Wizard1" runat="server" BackColor="#F7F6F3" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ActiveStepIndex="2">
+                        <asp:Wizard ID="Wizard1" runat="server" BackColor="#F7F6F3" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ActiveStepIndex="0" OnNextButtonClick="wizard1_NextButtonClick1">
                             <HeaderStyle BackColor="#5D7B9D" BorderStyle="Solid" Font-Bold="True" Font-Size="0.9em" ForeColor="White" HorizontalAlign="Left" />
                             <NavigationButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
                             <SideBarButtonStyle BorderWidth="0px" Font-Names="Verdana" ForeColor="White" />
@@ -83,15 +88,19 @@
                                     <table>
                                         <tr>
                                             <td colspan="3">
-                                                <asp:Label ID="Label2" runat="server" Text="Step 1:Specify Ticket Details" BorderStyle="Inset" Font-Names="Microsoft Sans Serif" Width="272px"></asp:Label></td>
-                                          
+                                                <asp:Label ID="Label2" runat="server" Text="Step 1:Specify Ticket Details" BorderStyle="Inset" Font-Names="Microsoft Sans Serif" Width="272px"></asp:Label></td>                    
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <asp:Label ID="lblMessageStep1" runat="server" Text="" ForeColor="Red" Font-Bold="true" ></asp:Label>
+                                            </td>
                                         </tr>
                                           <tr>
                                             <td>
                                                 <asp:Label ID="Label3" runat="server" Text="Flight Number"></asp:Label></td>
                                             <td>
                                                 <asp:TextBox ID="txtFltNo" runat="server"></asp:TextBox></td>
-                                            <td></td>
+                                            <td class="auto-style1"></td>
                                             <td></td>
                                         </tr>
                                           <tr>
@@ -102,7 +111,7 @@
                                                     <asp:ListItem>Executive</asp:ListItem>
                                                     <asp:ListItem>Business</asp:ListItem>
                                                 </asp:ListBox></td>
-                                            <td></td>
+                                            <td class="auto-style1"></td>
                                             <td></td>
                                         </tr>
                                           <tr>
@@ -111,13 +120,13 @@
                                             <td>
                                                 <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Double" BorderWidth="2px" DayNameFormat="FirstTwoLetters"></asp:Calendar>
                                             </td>
-                                            <td></td>
+                                            <td class="auto-style1"></td>
                                             <td></td>
                                         </tr>
                                           <tr>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
-                                            <td><asp:Button ID="btnNext" runat="server" Text="Next" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" /></td>
+                                            <td class="auto-style1"><asp:Button ID="btnNext" runat="server" Text="Next" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" /></td>
                                             <td></td>
                                         </tr>
                                     </table>

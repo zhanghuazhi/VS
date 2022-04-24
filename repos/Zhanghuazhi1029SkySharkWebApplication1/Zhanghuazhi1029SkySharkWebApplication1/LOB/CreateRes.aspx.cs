@@ -13,5 +13,10 @@ namespace Zhanghuazhi1029SkySharkWebApplication1.LOB
         {
 
         }
+
+        protected void wizard1_NextButtonClick1(object sender, WizardNavigationEventArgs e)
+        {
+
+        }
     }
 }
